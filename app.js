@@ -10,9 +10,10 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 app.use(cors({
-  origin: 'https://crud-app-frontend-olive.vercel.app/',
-  credentials: true
-}))
+    origin: 'http://localhost:3000', 
+    credentials: true
+  }));
+
   app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
